@@ -1,0 +1,15 @@
+<!-- HEADER -->
+<div ng-include="'app/modules/layout/header/header.tpl.html'" class="placeholder-header"></div>
+<!-- END HEADER -->
+
+<!-- you can add here a navigation template -->
+<a ui-sref="firstModule">First Module</a>
+<a ui-sref="secondModule">Second Module</a>
+
+
+<div id="main">
+    <span>------------------------------------------------</span>
+    <div id="content">
+        <div ui-view="lazyLoadView"></div>
+    </div>
+</div>
